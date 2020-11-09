@@ -70,7 +70,7 @@
       <!-- List of SWC files or directories to compile against but to omit from -->
       <!-- linking.                                                             -->
       <external-library-path>
-          <path-element>{playerglobalHome}/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc</path-element>
+                  <path-element>libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}/playerglobal.swc</path-element>
       </external-library-path>
 
       <!-- List of SWC files or directories to compile against but to omit from -->
@@ -94,13 +94,14 @@
 
       <!-- List of SWC files or directories that contain SWC files. -->
       <library-path>
-         <path-element>libs</path-element>
-         <path-element>{playerglobalHome}/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}</path-element>
+	  
+         <!-- <path-element>libs</path-element> -->
+         <path-element>libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}</path-element>
       </library-path>
 
       <!-- List of SWC files or directories that contain SWC files. -->
       <js-library-path>
-          <path-element>js/libs</path-element>
+         <path-element>libs/player/{targetPlayerMajorVersion}.{targetPlayerMinorVersion}</path-element>
       </js-library-path>
 
       <allow-subclass-overrides>true</allow-subclass-overrides>
