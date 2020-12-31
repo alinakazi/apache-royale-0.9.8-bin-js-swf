@@ -1028,6 +1028,17 @@ public class Panel extends Container
         super.childrenAdded();
     }
     
+	 private var _headerHeight:Number = 0;
+	
+	public function get HeaderHeight():Number
+	{
+		return _headerHeight;
+	}
+	
+	public function set HeaderHeight(value:Number):void
+	{
+		_headerHeight = value;
+	}
 
 
 }
